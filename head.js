@@ -6,5 +6,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-assertEqual("Bootcamp", "Bootcamp");
-assertEqual(1, 0);
+const head = function(arr) {
+  return arr[0] === "" ? undefined : arr[0];
+}
+
+assertEqual(head([]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
