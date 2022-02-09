@@ -23,14 +23,12 @@ const without = function(source, itemsToRemove) {
         element = null;
       }
     }); // end ItemsToRemove forEach
-    if (element !== null) newArray.push(element)
+    if (element !== null) newArray.push(element);
   }); // end source forEach
-  return newArray
+  return newArray;
 };
 
-without([1, 2, 3], [1]) // => [2, 3];
-without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"];
-
+// Random tests
 assertArraysEqual(without([1, 2, 3], []), [1, 2, 3]);
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
 assertArraysEqual(without([], [1, 2, 3]), []);
