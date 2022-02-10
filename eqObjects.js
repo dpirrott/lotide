@@ -25,7 +25,6 @@ const eqObjects = function(object1, object2) {
     if (!(key in object2)) {
       return false;
     }
-
     // Now to determine what kind of value we're dealing with (Arrays, Objects, or primitive data type... I guess thats it)
     if (object1[key] instanceof Array && object2[key] instanceof Array) {
       return eqArrays(object1[key], object2[key]);
@@ -33,7 +32,6 @@ const eqObjects = function(object1, object2) {
       //Since this means one value is a key and one is an array, return false
       return false;
     }
-    
     // All that could be left would be a possible primitive value comparison
     if (object1[key] !== object2[key]) return false;
   }
