@@ -15,17 +15,14 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 const takeUntil = function(array, callback) {
-  // ...
   let result = [];
   
   for (let item of array) {
-    const trueOrFalse = callback(item);
-    if (trueOrFalse) {
+    if (callback(item)) {
       return result;
     }
     result.push(item);
   }
-  // If desired item wasn't found, return original array
   return result;
 };
 
