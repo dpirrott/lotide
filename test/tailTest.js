@@ -1,7 +1,12 @@
 const tail = require('../tail');
-const assertEqual = require('../assertEqual');
+const eqArrays = require('../eqArrays');
+const assert = require('chai').assert;
 
-
-const result = tail(["Dylan", "Pirrotta"]);
-
-assertEqual((result === undefined || result.length < 2 ? `${result}` : `${result.join("")}`), "Pirrotta");
+describe('#tail', () => {
+  it('returns Pirrotta when passed ["Dylan", "Pirrotta"]', () => {
+    assert.strictEqual(tail(["Dylan", "Pirrotta"]), "Pirrotta");
+  });
+  it('returns "Paul", "Pirrotta" when passed ["Dylan", "Paul", "Pirrotta"]', () => {
+    assert.isTrue(eqArrays(tail(["Dylan", "Paul", "Pirrotta"]), ["Paul", "Pirrotta"]));
+  });
+});
