@@ -1,5 +1,4 @@
 const tail = require('../tail');
-const eqArrays = require('../eqArrays');
 const assert = require('chai').assert;
 
 describe('#tail', () => {
