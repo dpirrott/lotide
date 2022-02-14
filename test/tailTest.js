@@ -3,6 +3,9 @@ const eqArrays = require('../eqArrays');
 const assert = require('chai').assert;
 
 describe('#tail', () => {
+  it('returns [] when passed ["Dylan"]', () => {
+    assert.isTrue(eqArrays(tail(["Dylan"]), []));
+  });
   it('returns Pirrotta when passed ["Dylan", "Pirrotta"]', () => {
     assert.strictEqual(tail(["Dylan", "Pirrotta"]), "Pirrotta");
   });
