@@ -32,3 +32,14 @@ The following functions are currently implemented:
 * "head": returns the head of an array.
 * "middle": returns the middle value of an array, if it's an even array, it will return the 2 middle values
 * "tail": returns every value but the first value of the array.
+* "countLetters": returns a count of all letters in string (spaces/symbols ignored)
+* "countOnly": Counts only strings that have been given a value of true
+* "eqObjects": Returns true if two objects are identical, can handle nested objects through recursion
+* "findKey": searches through a nested object to find key matching first value which satisfies a callback function, returns key
+* "findKeyByValue": searches through object to find value, then returns corresponding key
+* "flatten": compresses nested arrays down to a linear array, assuming only one level of array nesting
+* "index": Wildcard function that takes in a few of the functions mentioned above, and exports them from this one source. Doesn't include all functions, just for learning purposes a few were added.
+* "letterPositions": Takes a string in, generates a callback function which will return the position of a letter that's passed in as a parameter.
+* "map": Setup a function that will apply a method to every element of an array, similar to the actual map function.
+* "takeUntil": A function that will keep taking in elements until a specified condition is met, then it stops there.
+* "without": A function that takes in two parameters, a source and itemsToRemove, and returns source without any items from itemsToRemove.
