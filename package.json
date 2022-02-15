@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "Person code testing library",
-  "main": "assertArraysEqual.js",
+  "name": "@dpirrotta/lotide",
+  "version": "1.0.1",
+  "description": "Personal code testing library",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
